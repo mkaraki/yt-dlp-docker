@@ -5,7 +5,7 @@ RUN chmod +x /bin/entry
 
 RUN apt-get update && apt-get upgrade -y && apt-get install ffmpeg -y && apt-get -y clean && rm -rf /var/lib/apt/lists/*
 RUN pip install --upgrade pip
-RUN pip install yt-dlp==2023.10.13
+RUN pip install yt-dlp==2023.11.16
 
 VOLUME ["/app"]
 WORKDIR /app
