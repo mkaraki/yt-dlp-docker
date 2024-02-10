@@ -9,7 +9,7 @@ if [[ "$1" == "yt-dlp" ]] ; then
   shift 1
 fi
 
-yt-dlp $*
+yt-dlp "$@"
 ytdlp_exit_code=$?
 
 if [[ $ytdlp_exit_code -ne 0 ]] ; then
