@@ -1,8 +1,10 @@
+# Check https://hub.docker.com/_/python/ for python version and supported debian version info
 ARG PYTHON_VERSION="3"
 ARG DEBIAN_VERSION="bookworm"
 
 FROM python:${PYTHON_VERSION}-${DEBIAN_VERSION}
 
+# Check: https://www.debian.org/distrib/packages for check version info
 ARG FFMPEG_VERSION="7:5.1.4-0+deb12u1"
 
 COPY requirements.txt /requirements.txt
