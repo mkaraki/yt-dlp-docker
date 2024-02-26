@@ -23,3 +23,9 @@ updates:
       interval: "weekly"
     assignees:
       - "mkaraki"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "mkaraki"
