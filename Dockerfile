@@ -6,8 +6,8 @@ COPY entry.sh /bin/entry
 RUN chmod +x /bin/entry
 
 RUN apt-get update && apt-get upgrade -y && apt-get install ffmpeg -y && apt-get -y clean && rm -rf /var/lib/apt/lists/*
-RUN pip install --upgrade pip
-RUN pip install -r /requirements.txt
+RUN pip install --root-user-action=ignore --upgrade pip
+RUN pip install --root-user-action=ignore -r /requirements.txt
 RUN rm /requirements.txt
 
 VOLUME ["/app"]

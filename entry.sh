@@ -3,7 +3,7 @@
 echo "Updating packages"
 apt-get update > /dev/null
 apt-get upgrade -y > /dev/null
-pip install --upgrade pip yt-dlp > /dev/null
+pip install --root-user-action=ignore --upgrade pip yt-dlp > /dev/null
 
 if [[ "$1" == "yt-dlp" ]] ; then
   shift 1
