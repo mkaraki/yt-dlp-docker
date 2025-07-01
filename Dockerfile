@@ -1,5 +1,5 @@
 # Check https://hub.docker.com/_/python/ for python version and supported debian version info
-FROM python:3.13.3-bookworm
+FROM python:3.13.5-bookworm
 
 COPY requirements.txt /requirements.txt
 COPY entry.sh /bin/entry
