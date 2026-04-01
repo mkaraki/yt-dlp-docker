@@ -1,5 +1,5 @@
 # Check https://hub.docker.com/_/python/ for python version and supported debian version info
-FROM python:3.14.2-slim-trixie
+FROM python:3.14.3-slim-trixie
 
 COPY requirements.txt /requirements.txt
 COPY entry.sh /bin/entry
