@@ -11,12 +11,20 @@ updates:
       interval: "monthly"
     assignees:
       - "mkaraki"
+    groups:
+      docker-all:
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
     assignees:
       - "mkaraki"
+    groups:
+      actions-all:
+        patterns:
+          - "*"
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
